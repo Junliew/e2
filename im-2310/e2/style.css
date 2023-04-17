@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/*changed the colour of the background to a more cozy and welcoming colour to relate to homemade food*/
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #fefae0;
+  color: #7F5539;
+  padding: 2vw;
+  font-family: 'Merriweather', serif;
+}
+
+/*put title in the middle as the center of attention*/
+h1{
+  text-align: center;
+}
+
+/*makes it look nicer and readable*/
+p1{
+  background-color: #fefae0;;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 10 solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/*increase the size and font weight of the filters to catch users attention*/
+summary{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*changed colour on hover so users know that the button is interactable, and helps in a smoother user experience*/
+summary:hover{
+color: #BC6C25;
+}
+
+
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+}
+
+/*changed the colour and the aethestics to make it more modern*/
+.FilterButton{
+border: transparent;
+box-shadow: 0 2px 5px #7F5539;
+border-radius: 5px;
+background-color: #BC6C25;
+font-size: 15px;
+color: white;
+padding: 5px;
+margin: 5px;
+}
+
+/*changed colour on hover so users know that the button is interactable*/
+.FilterButton:hover{
+  color: black;
+}
+
+/*make the title of the recipe more obvious*/
+.RecipeName{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*list the description together and make it more tidy*/
+.RecipeImageContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  box-sizing: border-box;
+}
+
+/*adjust images size*/
+.RecipeImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+/*decrease the size of the references as it is not the center of attention*/
+.Attribution{
+  font-size: 10px;
+  color: #DDA15E;
+}
+
